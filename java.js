@@ -5,7 +5,7 @@ const max = Math.floor(document.querySelector(".select2").value)
 let num = document.querySelector(".resultado")
 
 if(min >= max){
-    alert("O valor minímo não pode ser MAIOR ou igual a o valor máximo! ")
+    alert("O valor mínimo não pode ser IGUAL ou MAIOR que valor máximo! ")
 }
 else{
 const result = Math.floor(Math.random() * (max - min +1)) + min;
