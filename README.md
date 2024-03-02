@@ -1,4 +1,4 @@
-<h1>Sorteador Online</h1>
+<h1 >**Sorteador Online**</h1>
 <br>
 <br>
 <h2>Meu primeiro projeto utilizando javaScript e totalmente responsivo!</h2>
