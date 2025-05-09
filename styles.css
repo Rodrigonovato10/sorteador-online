@@ -1,153 +1,161 @@
+/* Estilos Base para todos os dispositivos */
 * {
-
-
     font-family: "Roboto", sans-serif;
     font-weight: 500;
-    opacity: 1;
-    padding: 0;
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    background-color: rgb(50, 100, 80, 80);
     text-align: center;
 }
-.img-sorte{
-    width:40vw;
-    height:40vh;
+
+body {
+    background-color: rgba(50, 100, 80, 0.8);
 }
+
+/* Estilos de Texto */
 h1 {
     font-weight: 500;
-    font-size: 55px;
-    color: rgb(129 19 19);
+    font-size: 2.5rem;
+    color: rgb(129, 19, 19);
+    margin: 1rem 0;
 }
-input{
-   
+
+p {
+    margin: 1rem 0;
+    color: #f2fffe;
+    line-height: 1.5;
+}
+
+/* Elementos de formulário */
+input {
     width: 200px;
     height: 50px;
- }
- input::placeholder { color: #ffff; }
- span{
-    display:inline-flex;
-     letter-spacing: px;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
 }
 
-p{
-    margin:10px;
-    color:#f2fffe
+input::placeholder {
+    color: #fff;
 }
 
-button{
-    font-size:30px;
-    font-weight:500;
-    width:112px;
-    height:50px;
+button {
+    font-size: 1.2rem;
+    font-weight: 500;
+    width: 120px;
+    height: 50px;
     background: #2ec219;
-    border-radius:10px;
-    cursor:pointer;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: white;
+    margin: 1rem 0;
+    transition: background-color 0.3s;
 }
-.resultado{
-    margin:auto;
-    padding:10px;
-    display:block;
-    border-radius:30px;
-    width:60px;
-    height:60px;
-    font-size: 25px;
+
+button:hover {
+    background: #25a015;
+}
+
+/* Resultado */
+.resultado {
+    margin: 1rem auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    width: 60px;
+    height: 60px;
+    font-size: 1.5rem;
     color: black;
     background-color: #fff;
+}
 
-    
-   }
+/* Imagens */
+.img-sorte {
+    width: 40vw;
+    max-width: 500px;
+    height: auto;
+    margin: 1rem 0;
+}
 
-.img1{
-    margin-right: 1000px;
-    width:200px;    
-    border-radius:500px;
-    
-    }
-    .img2{
-    margin-left:1000x;
-    width:200px;
-    border-radius:500px;
-    }
+.img-linha {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin: 2rem 0;
+}
 
+.img1, .img2 {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+    margin: 1rem;
+}
 
-  /* Responsividade para Celular*/
+span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
 
-
-    @media (max-width: 700px){
-
-    *{
-        font-family: "Roboto", sans-serif;
-        font-weight: 500;
-        opacity: 1;
-        padding: 0;
-        margin: 0;
-        box-sizing: border-box;
-        background-color: rgb(50, 100, 80, 80);
-        text-align: center;
-    }
-    img-sorte{
-        width:50vw;
-        height:30vh;
-    }
+/* Media Query para Tablets */
+@media (max-width: 900px) {
     h1 {
-        font-weight: 500;
-        font-size: 10vw;
-        color: rgb(129 19 19);
-    }
-    input{
-        text-decoration-color: rgb(70, 240, 18);
-        width: 40vw;
-        height: 8vh;
-     }
-     input::placeholder { color: #ffff; }
-     span{
-        display:inline-flex;
-        
-    }
-    
-    p{
-        margin:10px;
-        color:#f2fffe
-    }
-    
-
-    button{
-        font-size:30px;
-        font-weight:500;
-        width:50vw;
-        height:10vh;
-        background: #2ec219;
-        border-radius:10px;
-        cursor:pointer;
-    }
-    .resultado{
-    margin:auto;
-    padding:10px;
-    display:block;
-    border-radius:30px;
-    width:60px;
-    height:60px;
-    font-size: 25px;
-    color: black;
-    background-color: #fff;
-       }
-
-    .img1{
-        margin-right: 10vw;
-        width:30vw;    
-        border-radius:500px;
-        
-        }
-        .img2{
-        margin-left: 10vw;
-        width:30vw;
-        border-radius:500px;
-    }  
-     .img-linha{
-        display: inline-flex;
-     }
-
+        font-size: 2rem;
     }
 
+    .img-sorte {
+        width: 60vw;
+    }
 
+    .img1, .img2 {
+        width: 150px;
+    }
+
+    button {
+        width: 100px;
+        font-size: 1rem;
+    }
+}
+
+/* Media Query para Celulares */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    input {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    button {
+        width: 80%;
+        max-width: 200px;
+        height: 45px;
+    }
+
+    .img-sorte {
+        width: 80vw;
+    }
+
+    .img1, .img2 {
+        width: 120px;
+        margin: 0.5rem;
+    }
+
+    .img-linha {
+        gap: 1rem;
+    }
+
+    .resultado {
+        width: 50px;
+        height: 50px;
+        font-size: 1.2rem;
+    }
+}
